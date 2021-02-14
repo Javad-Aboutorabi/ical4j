@@ -210,7 +210,7 @@ public abstract class Property extends Content {
     /**
      * New timezone offset property name.
      */
-    public static final String javad = "T";
+    public static final String TZOFFSETTO = "TZOFFSETTO";
 
     /**
      * URL for timezone definition property name.

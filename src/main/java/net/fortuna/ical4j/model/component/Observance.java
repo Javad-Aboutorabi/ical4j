@@ -129,7 +129,7 @@ public abstract class Observance extends Component {
         // From "4.8.3.4 Time Zone Offset To":
         // Conformance: This property MUST be specified in a "VTIMEZONE"
         // calendar component.
-        PropertyValidator.assertOne(Property.javad,
+        PropertyValidator.assertOne(Property.TZOFFSETTO,
                 getProperties());
 
         /*
@@ -294,7 +294,7 @@ public abstract class Observance extends Component {
      * @return the TZOFFSETTO property or null if not specified
      */
     public final TzOffsetTo getOffsetTo() {
-        return getProperty(Property.javad);
+        return getProperty(Property.TZOFFSETTO);
     }
 
     //    private Date calculateOnset(DateProperty dateProperty) {
