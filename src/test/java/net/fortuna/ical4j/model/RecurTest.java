@@ -60,7 +60,7 @@ public class RecurTest extends TestCase {
 
     private static Logger log = LoggerFactory.getLogger(RecurTest.class);
 
-    private static final Locale testLocale = Locale.US;
+    private static final Locale testLocale = Locale.ROOT;
 
     private TimeZone originalDefault;
     

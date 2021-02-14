@@ -200,7 +200,7 @@ public class PeriodRuleTest extends FilterTest<CalendarComponent> {
         day.set(java.util.Calendar.SECOND, 0);
         day.set(java.util.Calendar.MILLISECOND, 0);
 
-        DateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.ENGLISH);
+        DateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.ROOT);
         dateFormat.setCalendar(java.util.Calendar.getInstance(timeZone));
 
         // friday..

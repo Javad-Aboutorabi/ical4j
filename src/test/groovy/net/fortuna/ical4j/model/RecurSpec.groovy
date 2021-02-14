@@ -270,7 +270,7 @@ class RecurSpec extends Specification {
     def 'verify recurrence rule in different locales: #rule'() {
         setup: 'override platform default locale'
         def originalLocale = Locale.default
-        Locale.default = Locale.FRANCE
+        Locale.default = Locale.ROOT
 
         and: 'parse recurrence rule'
         def recur = new Recur(rule)
@@ -369,8 +369,8 @@ class RecurSpec extends Specification {
     @Unroll
     def 'verify recurrence rule in different locales with a specified interval: #rule'() {
         setup: 'override platform default locale'
-        def originalLocale = Locale.default
-        Locale.default = Locale.FRANCE
+        def originalLocale = Locale.ROOT
+        Locale.default = Locale.ROOT
 
         and: 'parse recurrence rule'
         def recur = new Recur(rule)

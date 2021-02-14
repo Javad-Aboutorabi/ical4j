@@ -36,7 +36,7 @@ import java.text.SimpleDateFormat
 class DateTimeFormattingTest extends GroovyTestCase {
 
 	void testDateTimeFormatting() {
-		def df = new SimpleDateFormat('h:mma', Locale.US)
+		def df = new SimpleDateFormat('h:mma', Locale.ROOT)
 		assert '3:00PM' == df.format(new ContentBuilder().dtstart('20090810T150000').date)
 	}
 }
