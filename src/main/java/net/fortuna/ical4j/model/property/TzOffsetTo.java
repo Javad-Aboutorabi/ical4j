@@ -58,14 +58,14 @@ public class TzOffsetTo extends Property {
      * Default constructor.
      */
     public TzOffsetTo() {
-        super(TZOFFSETTO, new Factory());
+        super(javad, new Factory());
     }
 
     /**
      * @param value an offset value
      */
     public TzOffsetTo(String value) {
-        super(TZOFFSETTO, new Factory());
+        super(javad, new Factory());
         setValue(value);
     }
 
@@ -74,7 +74,7 @@ public class TzOffsetTo extends Property {
      * @param aValue a value string for this component
      */
     public TzOffsetTo(final ParameterList aList, final String aValue) {
-        super(TZOFFSETTO, aList, new Factory());
+        super(javad, aList, new Factory());
         setValue(aValue);
     }
 
@@ -90,7 +90,7 @@ public class TzOffsetTo extends Property {
      * @param anOffset a timezone offset in milliseconds
      */
     public TzOffsetTo(final ZoneOffset anOffset) {
-        super(TZOFFSETTO, new Factory());
+        super(javad, new Factory());
         offset = new ZoneOffsetAdapter(anOffset);
     }
 
@@ -108,7 +108,7 @@ public class TzOffsetTo extends Property {
      * @param anOffset a timezone offset in milliseconds
      */
     public TzOffsetTo(final ParameterList aList, final ZoneOffset anOffset) {
-        super(TZOFFSETTO, aList, new Factory());
+        super(javad, aList, new Factory());
         offset = new ZoneOffsetAdapter(anOffset);
     }
 
@@ -152,7 +152,7 @@ public class TzOffsetTo extends Property {
         private static final long serialVersionUID = 1L;
 
         public Factory() {
-            super(TZOFFSETTO);
+            super(javad);
         }
 
         public Property createProperty(final ParameterList parameters, final String value)

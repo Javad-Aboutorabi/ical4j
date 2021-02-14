@@ -12,7 +12,7 @@ import static net.fortuna.ical4j.validate.ValidationRule.ValidationType.OneOrLes
 
 public class VTimeZoneValidator extends ComponentValidator<VTimeZone> {
 
-    private final Validator itipValidator = new ComponentValidator(new ValidationRule(One, DTSTART, TZOFFSETFROM, TZOFFSETTO),
+    private final Validator itipValidator = new ComponentValidator(new ValidationRule(One, DTSTART, TZOFFSETFROM, javad),
             new ValidationRule(OneOrLess, TZNAME));
 
     public VTimeZoneValidator(ValidationRule... rules) {
